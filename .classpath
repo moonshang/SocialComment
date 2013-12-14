@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="target/classes"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/qq/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/qq/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/qq/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/qq/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/qq/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/qq/ezmorph-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/qq/httpclient-4.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/qq/httpclient-cache-4.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/qq/httpcore-4.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/qq/httpmime-4.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/qq/json-lib-2.4-jdk15-sources.jar"/>
+	<classpathentry kind="lib" path="lib/qq/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/qq/others/dom4j-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/qq/others/json-lib-2.2.2-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/qq/others/jsonplugin-0.34.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/commons-codec.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/fluent-hc-4.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/httpclient-cache-4.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="lib/t4j/httpclient/httpmime-4.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
