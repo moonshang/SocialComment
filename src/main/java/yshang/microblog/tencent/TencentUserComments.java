@@ -95,6 +95,7 @@ public class TencentUserComments implements Comment{
 	        	 if(callcount>callLimit-10){
 	        		 System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
 	        		 try { Thread.sleep ( onehourms ) ; } catch (InterruptedException ie){}
+	        		 callcount=0;
 	        	 }
 	        	 JSONObject responseObject = JSONObject.fromObject(response);
 	        	 JSONObject dataJsonObject = responseObject.getJSONObject("data");
@@ -119,6 +120,7 @@ public class TencentUserComments implements Comment{
 	            		 if(callcount > callLimit-10){
 	            			 System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
 	                		 try { Thread.sleep ( onehourms ) ; } catch (InterruptedException ie){}
+	                		 callcount=0;
 	                	 }
 	            		 
 	            		 JSONObject cresponseObject = JSONObject.fromObject(cresponse);
@@ -219,6 +221,7 @@ public class TencentUserComments implements Comment{
         	 if(callcount>callLimitation-10){
         		 System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
         		 try { Thread.sleep ( onehourms ) ; } catch (InterruptedException ie){}
+        		 callcount=0;
         	 }
         	 JSONObject responseObject = JSONObject.fromObject(response);
         	 JSONObject dataJsonObject = responseObject.getJSONObject("data");
@@ -253,6 +256,7 @@ public class TencentUserComments implements Comment{
                     		 if(callcount>callLimitation-10){
                     			 System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
                         		 try { Thread.sleep ( onehourms ) ; } catch (InterruptedException ie){}
+                        		 callcount=0;
                         	 }
                     		 
                     		 JSONObject cresponseObject = JSONObject.fromObject(cresponse);
@@ -314,7 +318,7 @@ public class TencentUserComments implements Comment{
 		String lasttwitterid = "1";
 
 		int callLimits = 1000;
-		int calltimes = 0;
+		int callcount = 0;
 		long onehour = 3600000;
 		
 		try{
@@ -327,10 +331,11 @@ public class TencentUserComments implements Comment{
 				//call user timeline
 				response = statusesAPI.userTimelineIds(oAuth, format, pageflag, pagetime, reqnum, lastid, name, fopenid, type, contenttype);
 				
-				calltimes++;
-				if(calltimes>callLimits-10){
-					System.out.println("Api limit is about to reach:"+calltimes + " Wait for one hour");
+				callcount++;
+				if(callcount>callLimits-10){
+					System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
 					Thread.sleep(onehour);
+					callcount=0;
 				}
 				JSONObject responseJSONObject = JSONObject.fromObject(response);
 				
@@ -358,11 +363,12 @@ public class TencentUserComments implements Comment{
 						//call tweet relist
 						cresponse = tapi.reList(oAuth, cformat, cflag, tweetid, cpageflag,cpagetime, creqnum, lasttwitterid);
 						
-						calltimes++;
+						callcount++;
 						
-						if(calltimes>callLimits-1){
-							System.out.println("Api limit is about to reach:"+calltimes + " Wait for one hour");
+						if(callcount>callLimits-1){
+							System.out.println("Api limit is about to reach:"+callcount + " Wait for one hour");
 							Thread.sleep(onehour);
+							callcount=0;
 						}
 						
 						//get all reviews

@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.company.app</groupId>
-  <artifactId>my-app-simple</artifactId>
+  <artifactId>social-comment</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>my-app-simple</name>
+  <name>social-comment</name>
   <url>http://maven.apache.org</url>
 
   <properties>

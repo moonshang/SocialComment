@@ -22,15 +22,15 @@ public class Entry {
 	    	 * Tencent Official blog search
 	    	 * using user timeline API and re_list API
 	    	 */
-	    	String username_jiehunba = "VIPpoet";
-	    	String username_baba = "babaqunaer5229";
-	    
-	    	Comment babacomment = CommentFactory.createComment("qq");
-	    	babacomment.setWritenFile("qq_babaqunaer.txt");
+//	    	String username_jiehunba = "VIPpoet";
+//	    	String username_baba = "babaqunaer5229";
+//	    
+//	    	Comment babacomment = CommentFactory.createComment("qq");
+//	    	babacomment.setWritenFile("qq_babaqunaer.txt");
 	    	/**
 	    	 * search all the existing tweets from babaqunaer5229
 	    	 */
-	    	babacomment.getAllComments(username_baba);
+//	    	babacomment.getAllComments(username_baba);
 	    	
 	    	/**
 	    	 * real time search, set a start time and terminated time
@@ -46,14 +46,19 @@ public class Entry {
 	    	 * t163 search
 	    	 * using searchAPI
 	    	 */
-//	    	Comment babasearch = CommentFactory.createComment("t163");
-//	    	babasearch.setWritenFile("t163_baba_test.txt");
-//	    	String query = "爸爸去哪儿";
+	    	Comment babasearch = CommentFactory.createComment("t163");
+	    	babasearch.setWritenFile("t163_baba_test.txt");
+	    	String query = "爸爸去哪儿";
 	    	
 	    	/**
 	    	 * search all
 	    	 */
-//	    	babasearch.getAllComments(query);
+	    	babasearch.getAllComments(query);
+	    	
+	    	long onehour=3600000;
+	    	try{Thread.sleep(onehour);}catch(Exception e){e.printStackTrace();}
+	    	query = "咱们结婚吧";
+	    	babasearch.getAllComments(query);
 	    	
 	    	/**
 	    	 * real time search

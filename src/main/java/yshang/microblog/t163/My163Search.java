@@ -32,7 +32,7 @@ public class My163Search implements Comment{
 	
 	public My163Search(){
 		try{
-			this.init();
+			My163Search.init();
 			this.loadedIds = new HashSet<Long>();
 		}catch(Exception e){
 			e.printStackTrace();
@@ -238,6 +238,7 @@ public class My163Search implements Comment{
 			if (page % 5 == 0)
 				Thread.sleep(defaultInterval);
 			if (count > callLimit-10) {
+				System.out.println("Api limit is about to reach:"+count+" Wait for one hour");
 				Thread.sleep(onehourms);
 				count = 0;
 			}

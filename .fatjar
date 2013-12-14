@@ -1,10 +1,10 @@
 #Fat Jar Configuration File
-#Fri Dec 13 15:39:58 PST 2013
+#Fri Dec 13 16:37:11 PST 2013
 onejar.license.required=true
 manifest.classpath=
 manifest.removesigners=true
 onejar.checkbox=false
-jarname=jiehunba_qq.jar
+jarname=t163_baba_jiehun.jar
 manifest.mergeall=true
 manifest.mainclass=yshang.microblog.Entry
 manifest.file=<createnew>
